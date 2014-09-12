@@ -6,15 +6,16 @@ The IMDb Top 250 list [1] celebrates outstanding films, cinema's development ove
 Snapshot of the IMDb Top 250 list as of Dec 13, 2012 [2]
 
 ### Transformation
-Clean-up steps for director names and release dates are included in googlevis.R
+Clean-up steps for director names and release dates are included in global.R
 
-### Visualization 
-The Google Visualization of Film Directors' Contribution (in %) to the IMDb Top250 (Dec 31, 2012) is published to [Visualizing.org](http://www.visualizing.org/full-screen/58439) [3]
+### Shiny App
+The Google Visualization of Film Directors' Contribution (in %) to the IMDb Top250 (Dec 31, 2012) is published to [Shinyapps.io](https://cwerner13.shinyapps.io/IMDb250_shiny/) [3]
 
 ![(http://www.visualizing.org/full-screen/58439)](http://www.visualizing.org/sites/default/files/imagecache/thumbnail_medium/images/2013-07-15_imdb250_3.png)
 
 #### References:
 [1] IMDb Top 250, URL: http://www.imdb.com/chart/top?ref_=nv_ch_250_4  
-[2] Snapshot of the IMDb Top 250 list as of Dec 13, 2012, URL: https://github.com/cwerner13/IMDb250_GoogleVis/blob/master/data/Top250%20(unique).csv  
+[2] Snapshot of the IMDb Top 250 list as of Dec 31, 2012, URL: https://github.com/cwerner13/IMDb250_GoogleVis/blob/master/data/Top250%20(unique).csv
+[3] Shiny App, URL: https://cwerner13.shinyapps.io/IMDb250_shiny/
 
 
