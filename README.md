@@ -6,7 +6,7 @@ The IMDb Top 250 list [1] celebrates outstanding films, cinema's development ove
 Snapshot of the IMDb Top 250 list as of Dec 13, 2012 [2]
 
 ### Transformation
-Clean-up steps for director names and release dates are included in googlevis.R
+Clean-up steps for director names and release dates are included in global.R
 
 ### Visualization 
 The Google Visualization of Film Directors' Contribution (in %) to the IMDb Top250 (Dec 31, 2012) is published to [Visualizing.org](http://www.visualizing.org/full-screen/58439) [3]
