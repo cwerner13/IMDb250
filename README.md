@@ -15,7 +15,7 @@ The Google Visualization of Film Directors' Contribution (in %) to the IMDb Top2
 
 #### References:
 [1] IMDb Top 250, URL: http://www.imdb.com/chart/top?ref_=nv_ch_250_4  
-[2] Snapshot of the IMDb Top 250 list as of Dec 31, 2012, URL: https://github.com/cwerner13/IMDb250_GoogleVis/blob/master/data/Top250%20(unique).csv
+[2] Snapshot of the IMDb Top 250 list as of Dec 31, 2012, URL: https://github.com/cwerner13/IMDb250_GoogleVis/blob/master/data/Top250%20(unique).csv  
 [3] Shiny App, URL: https://cwerner13.shinyapps.io/IMDb250_shiny/ 
 
 
