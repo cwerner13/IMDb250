@@ -40,32 +40,7 @@ shinyServer(function (input, output) {
                 
         })
         
-        
-#         output$tabla1 <- renderGvis({
-#                 
-#                 t1 <- with(data(), prop.table(table(Directors, SnapshotDate)))                
-#                 t1 <- as.data.frame.matrix(t1)
-#                 t1 <- t1*100     
-#                 t1 <- round(t1,1)
-#                 t1 <- cbind(row.names(t1),t1)
-#                 colnames(t1)[1] <- "Director Names"
-#                 t1.pl <- gvisTable(t1,options=list(page='enable',height=300,width=800))
-#                               
-#                 return(t1.pl)
-#         })
-
-        # Make the wordcloud drawing predictable during a session
-        
-        output$plot <- renderPlot({
-                
-#                 wordcloud_rep <- repeatable(wordcloud)            
-                
-                wc <- wordcloud(d$word,d$freq, scale=c(5,.3),min.freq=1,max.words=100
-                          , random.order=T, rot.per=.15, colors=brewer.pal(8, "Dark2"))
-                return(wc)
-        })
-
-        
+   
 #         output$tablebasic = renderTable({
 #                 t1 <- with(data(), (table(Directors)))
 #                 t1 <- as.data.frame(t1)
@@ -95,7 +70,6 @@ shinyServer(function (input, output) {
 
         
         outputOptions(output, "motionchart", suspendWhenHidden = FALSE)
-        outputOptions(output, "plot", suspendWhenHidden = FALSE)
+#         outputOptions(output, "plot", suspendWhenHidden = FALSE)
         outputOptions(output, "tabla1", suspendWhenHidden = FALSE)
-#         outputOptions(output, "linech", suspendWhenHidden = FALSE)
 })

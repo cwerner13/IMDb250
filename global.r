@@ -1,10 +1,10 @@
 library(googleVis)
 library(shiny)
 
-library(RXKCD)
-library(tm)
-library(wordcloud)
-library(RColorBrewer)
+# library(RXKCD)
+# library(tm)
+# library(wordcloud)
+# library(RColorBrewer)
 
 # setwd("~/bianalyst/20140407 Data Science Track/009 Data Products/IMDb250_shiny")
 data <- read.csv("./data/Top250 (unique).csv", sep="," , header=TRUE, skip=0, stringsAsFactors=FALSE)
@@ -66,12 +66,12 @@ result$Percentage <- result$Percentage*100
 
 ### wordcloud prep
 
-xkcd.corpus <- Corpus(DataframeSource(data.frame(result[, 6])))
-xkcd.corpus <- tm_map(xkcd.corpus, removePunctuation)
-xkcd.corpus <- tm_map(xkcd.corpus, tolower)
-xkcd.corpus <- tm_map(xkcd.corpus, function(x) removeWords(x, stopwords("english")))
-xkcd.corpus <- tm_map(xkcd.corpus, PlainTextDocument)
-tdm <- TermDocumentMatrix(xkcd.corpus)
-m <- as.matrix(tdm)
-v <- sort(rowSums(m),decreasing=TRUE)
-d <- data.frame(word = names(v),freq=v)
+# xkcd.corpus <- Corpus(DataframeSource(data.frame(result[, 6])))
+# xkcd.corpus <- tm_map(xkcd.corpus, removePunctuation)
+# xkcd.corpus <- tm_map(xkcd.corpus, tolower)
+# xkcd.corpus <- tm_map(xkcd.corpus, function(x) removeWords(x, stopwords("english")))
+# xkcd.corpus <- tm_map(xkcd.corpus, PlainTextDocument)
+# tdm <- TermDocumentMatrix(xkcd.corpus)
+# m <- as.matrix(tdm)
+# v <- sort(rowSums(m),decreasing=TRUE)
+# d <- data.frame(word = names(v),freq=v)
